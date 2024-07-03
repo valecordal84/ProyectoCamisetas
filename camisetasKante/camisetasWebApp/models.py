@@ -26,5 +26,5 @@ class Pedido(models.Model):
 class Cliente(models.Model):
     nombreComprador=models.CharField(max_length=50)
     mailComprador=models.EmailField()
-    direccionComprador=models.CharField(max_length=50, null=True, blank=True)
-    telefono=models.IntegerField(null=True, blank=True)
+    direccionComprador=models.CharField(max_length=50)
+    telefono=models.IntegerField()

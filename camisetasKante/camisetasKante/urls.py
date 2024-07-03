@@ -25,6 +25,9 @@ urlpatterns = [
     path('conjuntos', views.conjuntos, name="Conjuntos"),
     path('accesorios', views.accesorios, name="Accesorios"),
     path('contacto', views.contacto, name="Contáctanos"),
-    path('busquedaInventario', views.busquedaInventario),
-    path('inventario', views.inventario),
+    path('inventarioForm', views.agregarInventario, name="InventarioForm"),
+    path('clienteForm', views.agregarCliente, name="clienteForm"),
+    path('pedidoForm', views.agregarPedido, name="agregarPedido"),
+    path('buscarInventario',views.buscarInventario, name="buscarInventario"),
+    path('encontrarInventario', views.encontrarInventario, name="encontrarInventario"),
 ]

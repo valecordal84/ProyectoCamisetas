@@ -1,0 +1,17 @@
+{% extends "camisetasWebApp/base.html" %}
+
+{% block titulo %}
+<h1 class="mb-5">Buscar inventario:</h1>
+{% endblock titulo %}
+
+{% block contenido %}
+
+<form action="{% url 'encontrarInventario' %}" method="get"
+    {% csrf_token %}
+    <table>
+       <p> Ingrese su busqueda: <input type="text" name="buscar" id"buscar"></p>
+    </table>
+    <input type="submit" value="Buscar">
+</form>
+
+{% endblock contenido%}
