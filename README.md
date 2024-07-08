@@ -6,9 +6,9 @@ Las clases de los models son:
 - Clientes
 
 Los formularios para ingresar datos en la base de datos son:
-/agregarCliente
-/agregarInventario
-/agregarPedido
+/clienteForm
+/inventarioForm
+/pedidoForm
 
 El formulario de busqueda es:
 /buscarInventario el cual busca dentro del model Inventario si se encuentra el objeto
