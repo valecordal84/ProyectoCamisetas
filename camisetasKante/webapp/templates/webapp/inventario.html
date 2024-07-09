@@ -1,0 +1,29 @@
+{% extends "webapp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+   <!-- Section-->
+   <section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="col mb-5">
+                <div class="card h-100">
+                     <!-- Section-->
+                      <!-- Heading -->
+   <section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{inventario.imagen.url}}" alt="" style="width: 50%;">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4" >
+            <span class="section-heading-lower">{{inventario.nombre}}</span>
+            <span class="section-heading-upper">{{inventario.precio}}</span>
+          </h2>
+        
+         
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

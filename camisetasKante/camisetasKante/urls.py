@@ -16,18 +16,23 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from camisetasWebApp import views
+from webapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name="Inicio"),
-    path('camisetas', views.camisetas, name="Camisetas"),
-    path('conjuntos', views.conjuntos, name="Conjuntos"),
-    path('accesorios', views.accesorios, name="Accesorios"),
-    path('contacto', views.contacto, name="Contáctanos"),
-    path('inventarioForm', views.agregarInventario, name="InventarioForm"),
-    path('clienteForm', views.agregarCliente, name="clienteForm"),
+    path('inicio', views.home, name="Inicio"),
+    
+    
+    path('inventario', views.inventario, name="Inventario"),
+    path('contacto', views.contacto, name="Contacto"),
+    
+    #Forms
+    path('clienteForm', views.agregarCliente, name="agregarCliente"),
     path('pedidoForm', views.agregarPedido, name="agregarPedido"),
+    path('inventarioForm', views.agregarInventario, name="agregarInventario"),
+    
+    #Busqueda
     path('buscarInventario',views.buscarInventario, name="buscarInventario"),
     path('encontrarInventario', views.encontrarInventario, name="encontrarInventario"),
 ]
